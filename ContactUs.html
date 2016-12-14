@@ -8,75 +8,54 @@
     <link href="w3.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/8fe783f338.js"></script>
-
-    <style>
-        .bgimg-1 {
-            background-image: url(Banner4.png);
-            min-height: 250px;
-            background-position: center;
-            position: relative;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
 
-<body style="color:black; background-color:#2e426b">
+<body class="w3-light-grey" style="background-color:#f0f0f4 !important">
 
-    <div class="w3-top m-b-1">
-        <ul class="w3-navbar w3-medium w3-light-grey w3-left-align w3-card-4" style="background-color:#e6e6e6 !important">
-            <li class="w3-hide-medium w3-hide-large w3-white w3-opennav w3-right">
-                <a href="javascript:void(0);" onclick="myFunction()">☰</a>
-            </li>
-            <li class="w3-white w3-hide-large w3-hide-medium w3-border-bottom"><a href="#">Place Name</a></li>
-            <li class="w3-hide-small w3-border-right"><a href="index.html">Home</a></li>
-            <li class="w3-hide-small w3-border-right"><a href="Rates.html">Rates</a></li>
-            <li class="w3-hide-small w3-border-right"><a href="Nearby.html">Nearby</a></li>
-			<li class="w3-white w3-hide-small w3-border-right"><a href="ContactUs.html">Contact Us</a></li>
-        </ul>
-        <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
-            <ul class="w3-navbar w3-left-align w3-medium w3-light-grey w3-card-2">
-                <li class="w3-border-bottom"><a href="index.html">Home</a></li>
-                <li class="w3-border-bottom"><a href="Rates.html">Rates</a></li>
-                <li class="w3-border-bottom"><a href="Nearby.html">Nearby</a></li>
-                <li class="w3-border-bottom w3-grey"><a href="ContactUs.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div><br/><br/>
+    <!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-full navbar-light bg-faded p-a-1 w3-card-2 w3-top">
+		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar2" 
+		aria-expanded="false" aria-label="Toggle navigation">
+		&#9776; PLACE NAME
+		</button>
+
+		<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+			<a class="navbar-brand hidden-xs-down" href="#">PLACE NAME</a>
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+				<li class="nav-item"><a class="nav-link" href="AboutUs.html" >ABOUT US</a></li>
+				<li class="nav-item"><a class="nav-link" href="OurRooms.html">OUR ROOMS</a></li>
+				<li class="nav-item"><a class="nav-link"  href="Nearby.html">NEARBY</a></li>
+				<li class="nav-item"><a class="nav-link" style="color:#5A88AC !important" href="ContactUs.html">CONTACT US</a></li>
+				<li class="nav-item"><a class="btn btn-info btn-sm" style="margin-top:5px"  href="http://www.nightsbridge.co.za/bridge/book?bbid=21108" target="blank">BOOK NOW</a></li>
+			</ul>
+		</div>
+	</nav><br/>
 	
-    <div class="container-fluid w3-grey m-a-2 p-a-0 w3-card-8" align="center">
+    <div class="container-fluid p-a-0 m-t-3 align="center">
 
         <!-- CAROUSEL -->
-        <div id="carousel-example-generic" class="carousel slide w3-card-2" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide w3-card-2">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="Banner4.png" style="height:300px; width:100%; opacity:0.9" />
+                    <img src="Banner3.jpg" style="height:400px; width:100%; opacity:0.9" />
                     <div class="carousel-caption">
                         <h3>Welcome to our Guesthouse</h3>
                         <p class="m-b-3">We provide a variety of rooms for our clients!</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="Banner4.png" style="height:300px; width:100%; opacity:0.8" />
-                    <div class="carousel-caption">
-                        <h3>Good Deals</h3>
-                        <p class="m-b-3">Only the best price, specially for you!</p>
-                    </div>
-                </div>
             </div>
-            <a class="left carousel-control"></a>
-            <a class="right carousel-control"></a>
         </div>
 
         <!-- HEADER -->
-        <div class="w3-dark-grey w3-padding-4 w3-card-2">
+        <div class="w3-white p-a-1 w3-card-2" align="left">
             <h4>Contact Us <i class="fa fa-gratipay" aria-hidden="true"></i></h4>
         </div>
 
 		<div class="row m-a-1">
 			<div class="col-md-4">
 				<div class="card w3-card-4" align="left">
-					<div class="card-header bg-inverse" style="color:white">Contact Details</div>
+					<div class="card-header">Contact Details</div>
 					<ul class="list-group list-group-flush" style="color:black">
 						<li class="list-group-item"><i class="fa fa-home" aria-hidden="true" style="margin-right:5px"></i> 42 Monta Vista, Brackenfell, 7560</li>
 						<li class="list-group-item"><a href="tel:27824565964"><i class="fa fa-phone" aria-hidden="true" style="margin-right:5px"></i> 082 456 5964</a></li>
@@ -84,13 +63,14 @@
 						<li class="list-group-item"><i class="fa fa-envelope-o" aria-hidden="true" style="margin-right:5px"></i> 2728maxidrive@gmail.com</li>
 					</ul>
 					<div class="card-footer">
-						<a class="btn btn-danger w-100" href="mailto:2728maxidrive@gmail.com?Subject=Guesthouse%20Enquiry" target="_top">Email Us</a>
+						<a class="btn btn-danger" style="width:49%" href="mailto:2728maxidrive@gmail.com?Subject=Guesthouse%20Enquiry" target="_top">Email Us</a>
+						<a class="btn btn-danger" style="width:49%" href="mailto:2728maxidrive@gmail.com?Subject=Guesthouse%20Enquiry" target="_top">Book Now</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-8">
 				<div class="card m-a-0 w3-card-4 m-b-1">
-					<div class="card-header bg-inverse" style="color:white">Directions From Cape Town International Airport</div>
+					<div class="card-header">Directions From Cape Town International Airport</div>
 					<div class="card-block" align="left" style="color:black">
 						<ul>
 							<li>Merge onto Settlers Way/N2 in Crossroads from Borcherds Quarry Rd/M22 in the direction of Somerset West. Drive for 3.2 km</li>
@@ -112,7 +92,7 @@
 			width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     
-	<footer class="p-a-1 m-t-1 w3-dark-grey">
+	<footer class="p-a-1 w3-dark-grey">
         <p class="w3-small m-b-0">
             <a href="index.html">Home</a> |
             <a href="Rates.html">Rates</a> |
@@ -123,15 +103,6 @@
     </footer>
 	
 	<!-- NAVBAR SCRIPT -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+    <script src="bootstrap.min.js"></script>
 </body>
 </html>

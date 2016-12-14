@@ -8,54 +8,42 @@
     <link href="w3.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/8fe783f338.js"></script>
-
-    <style>
-        .bgimg-1 {
-            background-image: url(Banner4.png);
-            min-height: 250px;
-            background-position: center;
-            position: relative;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
 
-<body style="color:black; background-color:#2e426b">
+<body class="w3-light-grey" style="background-color:#f0f0f4 !important">
 
-    <ul class="w3-navbar w3-medium w3-light-grey w3-left-align w3-card-4" style="background-color:#e6e6e6 !important">
-            <li class="w3-hide-medium w3-hide-large w3-white w3-opennav w3-right">
-                <a href="javascript:void(0);" onclick="myFunction()">☰</a>
-            </li>
-            <li class="w3-white w3-hide-large w3-hide-medium w3-border-bottom"><a href="#">Place Name</a></li>
-            <li class="w3-hide-small w3-border-right"><a href="index.html">Home</a></li>
-            <li class="w3-hide-small w3-border-right"><a href="Rates.html">Rates</a></li>
-            <li class="w3-white w3-hide-small w3-border-right"><a href="Nearby.html">Nearby</a></li>
-			<li class="w3-hide-small w3-border-right"><a href="ContactUs.html">Contact Us</a></li>
-        </ul>
-        <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
-            <ul class="w3-navbar w3-left-align w3-medium w3-light-grey w3-card-2">
-                <li class="w3-border-bottom"><a href="index.html">Home</a></li>
-                <li class="w3-border-bottom"><a href="AboutUs.html">About Us</a></li>
-				<li class="w3-border-bottom"><a href="OurRooms.html">Our Rooms</a></li>
-                <li class="w3-border-bottom"><a href="Rates.html">Rates</a></li>
-                <li class="w3-border-bottom w3-grey"><a href="Nearby.html">Nearby</a></li>
-                <li class="w3-border-bottom"><a href="ContactUs.html">Contact Us</a></li>
-            </ul>
-        </div>
-    </div><br/><br/>
+    <!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-full navbar-light bg-faded p-a-1 w3-card-2 w3-top">
+		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar2" 
+		aria-expanded="false" aria-label="Toggle navigation">
+		&#9776; PLACE NAME
+		</button>
 
-    <div class="container-fluid w3-grey m-a-2 p-a-a w3-card-8" align="center">
+		<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+			<a class="navbar-brand hidden-xs-down" href="#">PLACE NAME</a>
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+				<li class="nav-item"><a class="nav-link" href="AboutUs.html" >ABOUT US</a></li>
+				<li class="nav-item"><a class="nav-link" href="OurRooms.html">OUR ROOMS</a></li>
+				<li class="nav-item"><a class="nav-link" style="color:#5A88AC !important" href="Nearby.html">NEARBY</a></li>
+				<li class="nav-item"><a class="nav-link" href="ContactUs.html">CONTACT US</a></li>
+				<li class="nav-item"><a class="btn btn-info btn-sm" style="margin-top:5px"  href="http://www.nightsbridge.co.za/bridge/book?bbid=21108" target="blank">BOOK NOW</a></li>
+			</ul>
+		</div>
+	</nav><br/>
+
+    <div class="container-fluid p-a-1 m-t-3" align="center">
 		<br/>
         <div class="card p-a-1 w3-card-2 w3-khaki">
             More Information Needed!
         </div>
 		<br/>
     </div>
-    <footer class="p-a-1 m-t-1 w3-dark-grey w3-bottom">
+    <footer class="p-a-1 m-t-1 w3-dark-grey">
         <p class="w3-small m-b-0">
             <a href="index.html">Home</a> |
-            <a href="Rates.html">Rates</a> |
+            <a href="AboutUs.html">About Us</a> |
+            <a href="OurRooms.html">Our Rooms</a> |
             <a href="Nearby.html">Nearby</a> |
             <a href="ContactUs.html">Contact Us</a> |
             <a href="http://Kobusvds.github.io">Made by Kobusvds</a>
@@ -63,15 +51,6 @@
     </footer>
 	
 	<!-- NAVBAR SCRIPT -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
+    <script src="bootstrap.min.js"></script>
 </body>
 </html>
