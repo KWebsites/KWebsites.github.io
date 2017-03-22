@@ -72,7 +72,7 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 80px 0; }
 
 aside {
   padding: 50px 0; }
@@ -154,7 +154,6 @@ aside {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -168,7 +167,7 @@ header {
   header .header-content {
     position: relative;
     text-align: center;
-    padding: 100px 15px 100px;
+    padding: 100px 15px 20px;
     width: 100%; }
     header .header-content .header-content-inner h1 {
       font-weight: 700;
@@ -182,11 +181,11 @@ header {
       font-weight: 300;
       color: rgba(255, 255, 255, 0.7);
       font-size: 16px;
-      margin-bottom: 50px; }
+      margin-bottom: 20px; }
   @media (min-width: 768px) {
     header {
-      height: 100%;
-      min-height: 600px; }
+      height: 70%;
+      min-height: 400px; }
       header .header-content {
         position: absolute;
         top: 50%;
