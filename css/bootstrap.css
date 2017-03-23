@@ -12,6 +12,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+}
+
 body {
   margin: 0;
 }
