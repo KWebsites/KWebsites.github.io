@@ -19,13 +19,16 @@
 <body id="page-top">
 
     <!-- NAVIGATION -->
-    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light">
+    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light pl-0">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
-            <a class="navbar-brand page-scroll form-inline" href="#page-top"><div class="navbar-img" style="width:70px; height:30px"></div></a>
-            <div class="collapse navbar-collapse" id="navbarExample">
+        <div class="container w-100" >
+            <a class="navbar-brand page-scroll form-inline" href="#page-top">
+				<div class="navbar-img hidden-md-down" style="width:70px; height:30px"></div>
+				<img src="img/plan2.png" style="width:70px; height:30px" class="hidden-lg-up ml-3">
+			</a>
+            <div class="collapse navbar-collapse ml-3" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#about">Home</a>
@@ -40,7 +43,7 @@
                         <a class="nav-link page-scroll" href="Products.html">Products & Services</a>
                     </li>
 					<li class="nav-item">
-                        <div class="btn btn-sm btn-primary" style="margin-top:3px">Contact Us</div>
+                        <a href="ContactUs.html"><div class="btn btn-sm btn-primary" style="margin-top:3px; cursor:pointer">Contact Us</div></a>
                     </li>
                 </ul>
             </div>
