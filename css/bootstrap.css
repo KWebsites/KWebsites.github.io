@@ -4004,6 +4004,7 @@ tbody.collapse.show {
 
 @media (max-width: 575px) {
   .navbar-toggleable .navbar-nav .dropdown-menu {
+  
     position: static;
     float: none;
   }
@@ -4135,6 +4136,11 @@ tbody.collapse.show {
     padding-right: 0;
     padding-left: 0;
   }
+  
+  .navbar
+	{
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+	}
 }
 
 @media (min-width: 992px) {
