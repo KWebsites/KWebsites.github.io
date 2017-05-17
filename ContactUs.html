@@ -5,68 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Plan-It</title>
 
-    <!-- CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/w3.css" rel="stylesheet">
-	<link href="css/creative.css" rel="stylesheet">
+	<!-- CSS -->
+    <link href="css/k1.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=VT323|Roboto" rel="stylesheet">
 	<script src="css/FontAwesome.js"></script>
-	
-    <!-- Additional fonts for this theme -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<style>
+		body {font-family: 'Roboto', sans-serif;}
+		@font-face 
+		{
+			font-family: f1; 
+			src: url('font1.ttf');
+		} 
+	</style>
 </head>
 
-<body id="page-top">
+<body>
 
-    <!-- NAVIGATION -->
-    <nav id="mainNav" class="navbar fixed-top navbar-toggleable-md navbar-light pl-0">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container w-100" >
-            <a class="navbar-brand page-scroll form-inline" href="#page-top">
-				<div class="navbar-img hidden-md-down" style="width:70px; height:30px"></div>
-				<img src="img/plan2.png" style="width:70px; height:30px" class="hidden-lg-up ml-3">
-			</a>
-            <div class="collapse navbar-collapse ml-3" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="AboutUs.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Clients.html">Partners & Clients</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="Products.html">Products & Services</a>
-                    </li>
-					<li class="nav-item">
-                        <a href="#about" class="page-scroll"><div class="btn btn-sm btn-primary" style="margin-top:3px; cursor:pointer">Contact Us</div></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-toggleable-sm navbar-light bg-white fixed-top s-2">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#"><img src="img/plan2.png" style="width:70px; height:30px"></a>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav ml-auto small font-weight-bold">
+				<li class="nav-item">
+					<a class="nav-link text-black thover-grey" href="index.html">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black thover-grey" href="AboutUs.html">ABOUT US</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black thover-grey" href="Clients.html">PARTNERS & CLIENTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black thover-grey" href="Products.html">PRODUCTS & SERVICES</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-black thover-grey" href="Social.html">SOCIAL RESPONSIBILITY</a>
+				</li>
+				<li class="nav-item">
+					<a href="ContactUs.html"><div class="btn btn-sm btn-primary bg-indigo hover-red mt-1 nb">Contact Us</div></a>
+				</li>
+			</ul>
+		</div>
     </nav>
 
 	<!-- HEADER -->
-	<div class="smHeader w3-card-2" align="center">
-		<img src="img/logo.png" class="m-3 img-fluid" style="max-width: 100%; height: auto">
+	<div class="container-fluid parImage p-5 s-2" align="center">
+		<img src="img/logo.png" class="mt-5 img-fluid" style="max-width: 100%; height: auto">
 	</div>
 
 	<!-- ABOUT US -->
-    <section class="w3-dark-grey" id="about">
-        <div class="container-fluid">
+    <section class="bg-dark-grey" id="about">
+        <div class="container-fluid p-5">
             <div class="row" >
                 <div class="col-sm-6">
 				
 					<!-- INFO -->
-					<ul class="list-group mb-3 w3-card-4" align="left">    
-						<li class="list-group-item w3-blue-grey">Info</li>
+					<ul class="list-group mb-3 s-4" align="left">    
+						<li class="list-group-item bg-blue-grey">Info</li>
 						
 						<!-- TEL -->
-						<li class="list-group-item w3-white">
+						<li class="list-group-item bg-white">
 							<a href="tel:27219054405" class="w-100" style="text-decoration:none; color:black">
 								Tel:
 								<span class="badge badge-pill badge-default p-2 float-right">+27 21 905 4405</span>
@@ -74,7 +75,7 @@
 						</li>
 						
 						<!-- FAX -->
-						<li class="list-group-item w3-white">
+						<li class="list-group-item bg-white">
 							<a class="w-100">
 								Fax:
 								<span class="badge badge-pill badge-default p-2 float-right">+27 21 905 1112</span>
@@ -82,7 +83,7 @@
 						</li>
 						
 						<!-- ADDRESS -->
-						<li class="list-group-item w3-pale-red">
+						<li class="list-group-item bg-pale-red">
 							<p class="w-100">
 								Address:
 								<span class="float-right" align="right">
@@ -96,13 +97,13 @@
 						</li>
 						
 						<!-- OFFICE HOURS -->
-						<li class="list-group-item w3-white">
+						<li class="list-group-item bg-white">
 							<strong>Office Hours:</strong>
 							<a class="w-100 mt-2">
 								08:00 till 17:00 <span class="badge badge-pill badge-default p-2 float-right">Monday to Thursday</span>
 							</a>
 						</li>
-						<li class="list-group-item w3-white">
+						<li class="list-group-item bg-white">
 							<a class="w-100">
 								08:00 to 16:00 <span class="badge badge-pill badge-default p-2 float-right">Fridays</span>
 							</a>
@@ -115,35 +116,35 @@
                 <div class="col-sm-6">
 				
 					<!-- CONTACT US -->
-					<ul class="list-group mb-3 w3-card-4" align="left">
-						<li class="list-group-item w3-blue-grey">Contact Us</li>
-						<li class="list-group-item w3-white">
+					<ul class="list-group mb-3 s-4" align="left">
+						<li class="list-group-item bg-blue-grey">Contact Us</li>
+						<li class="list-group-item bg-white">
 							<div class="container-fluid">
 								<p>Should you have an enquiry, please fill out the form below. We endeavour to respond to all queries within 24 hours.</p>
 
 								<div class="form-group">
 								  <label for="comment">Your Name:</label>
-								  <input name="txtName" type="text" id="txtName" class="form-control w3-card-2" required="true" />
+								  <input name="txtName" type="text" id="txtName" class="form-control s-2" required="true" />
 								</div>
 
 								<div class="form-group">
 								  <label for="comment">Contact Tel:</label>
-								  <input name="txtTel" type="number" id="txtTel" class="form-control w3-card-2" required="true" />
+								  <input name="txtTel" type="number" id="txtTel" class="form-control s-2" required="true" />
 								</div>
 
 								<div class="form-group">
 								  <label for="comment">Email:</label>
-								  <input name="txtEmail" type="email" id="txtEmail" class="form-control w3-card-2" required="true" />
+								  <input name="txtEmail" type="email" id="txtEmail" class="form-control s-2" required="true" />
 								</div>
 
 								<div class="form-group">
 								  <label for="comment">Enquiry / Feedback:</label>
-								  <textarea name="txtDetail" rows="3" cols="20" id="txtDetail" class="form-control w3-card-2" 
+								  <textarea name="txtDetail" rows="3" cols="20" id="txtDetail" class="form-control s-2" 
 								  required="true" style="resize:none"></textarea>
 								</div>
 							</div>
 						</li>
-						<li class="list-group-item w3-light-grey align-right" align="right">
+						<li class="list-group-item bg-light-grey">
 							<input type="submit" name="Button1" value="Submit" id="Button1" class="btn btn-info" />
 						</li>
 					</ul>
@@ -153,16 +154,12 @@
     </section>
 
 	<!-- FOOTER -->
-	<footer class="p-3 gb-inverse text-white" style="background-color:#4d4d4d; color:white">
-        <p class="w3-small mb-0">&copy; Copyright Plan IT. All Rights Reserved. | Website designed and hosted by PlanIT | <a class="text-faded" href="BEE Certificate.pdf" target="_blank">BEE Certificate</a> | <a class="text-faded" href="Terms and Conditions.pdf" target="_blank">Terms & Conditions</a> | <a class="text-faded" href="Disclaimer.pdf" target="_blank">Disclaimer</a></p>
+	<footer class="p-3 text-white" style="background-color:#4d4d4d; color:white">
+        <p class="small mb-0">&copy; Copyright Plan IT. All Rights Reserved. | Website designed and hosted by PlanIT | <a class="text-faded" href="BEE Certificate.pdf" target="_blank">BEE Certificate</a> | <a class="text-faded" href="Terms and Conditions.pdf" target="_blank">Terms & Conditions</a> | <a class="text-faded" href="Disclaimer.pdf" target="_blank">Disclaimer</a></p>
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="lib/jquery/jquery.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="lib/scrollreveal/scrollreveal.min.js"></script>
-    <script src="css/creative.js"></script>
-
+    <script src="css/jquery.js"></script>
+    <script src="css/bootstrap.js"></script>
 </body>
 </html>
