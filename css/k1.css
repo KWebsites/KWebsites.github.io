@@ -56,6 +56,21 @@
 	color: white;
 }
 
+.parImage2
+{
+	position: relative;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	background-image: url("../img/header2.jpg");
+	text-align: center;
+	background-attachment: fixed;
+	color: white;
+}
+
 .bgimg-2 
 {
 	position: relative;
