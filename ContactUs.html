@@ -64,10 +64,10 @@
 				
 					<!-- INFO -->
 					<ul class="list-group mb-3 s-4" align="left">    
-						<li class="list-group-item bg-blue-grey p-2 pl-3">Info</li>
+						<li class="list-group-item bg-blue-grey">Info</li>
 						
 						<!-- TEL -->
-						<li class="list-group-item bg-white">
+						<li class="list-group-item bg-white p-2 pl-3">
 							<a href="tel:27219054405" class="w-100" style="text-decoration:none; color:black">
 								Tel:
 								<span class="badge badge-pill badge-default p-2 float-right">+27 21 905 4405</span>
@@ -75,7 +75,7 @@
 						</li>
 						
 						<!-- FAX -->
-						<li class="list-group-item bg-white">
+						<li class="list-group-item bg-white  p-2 pl-3">
 							<a class="w-100">
 								Fax:
 								<span class="badge badge-pill badge-default p-2 float-right">+27 21 905 1112</span>
@@ -83,27 +83,24 @@
 						</li>
 						
 						<!-- ADDRESS -->
-						<li class="list-group-item bg-pale-red">
+						<li class="list-group-item bg-pale-red p-2 pl-3">
 							<p class="w-100">
 								Address:
 								<span class="float-right" align="right">
-									Unit 2, Sax Centre <br/>
-									Saxenburg Park <br/>
-									Blackheath <br/>
-									Cape Town <br/>
-									7580
+									Unit 2, Sax Centre, Saxenburg Park<br/> 
+									Blackheath, Cape Town, 7580
 								</span>
 							</p>
 						</li>
 						
 						<!-- OFFICE HOURS -->
-						<li class="list-group-item bg-white">
+						<li class="list-group-item bg-white p-2 pl-3">
 							<strong>Office Hours:</strong>
 							<a class="w-100 mt-2">
 								08:00 till 17:00 <span class="badge badge-pill badge-default p-2 float-right">Monday to Thursday</span>
 							</a>
 						</li>
-						<li class="list-group-item bg-white">
+						<li class="list-group-item bg-white p-2 pl-3">
 							<a class="w-100">
 								08:00 to 16:00 <span class="badge badge-pill badge-default p-2 float-right">Friday</span>
 							</a>
@@ -117,35 +114,40 @@
 				
 					<!-- CONTACT US -->
 					<ul class="list-group mb-3 s-4" align="left">
-						<li class="list-group-item bg-blue-grey p-2 pl-3">Contact Us</li>
-						<li class="list-group-item bg-white">
+						<li class="list-group-item bg-blue-grey">Contact Us</li>
+						<li class="list-group-item bg-white p-0 pt-2">
 							<div class="container-fluid">
 								<p>Should you have an enquiry, please fill out the form below. We endeavour to respond to all queries within 24 hours.</p>
-
-								<div class="form-group">
-								  <label for="comment">Your Name:</label>
-								  <input name="txtName" type="text" id="txtName" class="form-control s-2" required="true" />
-								</div>
-
-								<div class="form-group">
-								  <label for="comment">Contact Tel:</label>
-								  <input name="txtTel" type="number" id="txtTel" class="form-control s-2" required="true" />
+								
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+										  <label for="comment">Your Name:</label>
+										  <input name="txtName" type="text" id="txtName" class="form-control form-control-sm s-2" required="true" />
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+										  <label for="comment">Contact Tel:</label>
+										  <input name="txtTel" type="number" id="txtTel" class="form-control form-control-sm s-2" required="true" />
+										</div>
+									</div>
 								</div>
 
 								<div class="form-group">
 								  <label for="comment">Email:</label>
-								  <input name="txtEmail" type="email" id="txtEmail" class="form-control s-2" required="true" />
+								  <input name="txtEmail" type="email" id="txtEmail" class="form-control form-control-sm s-2" required="true" />
 								</div>
 
 								<div class="form-group">
 								  <label for="comment">Enquiry / Feedback:</label>
-								  <textarea name="txtDetail" rows="3" cols="20" id="txtDetail" class="form-control s-2" 
+								  <textarea name="txtDetail" rows="3" cols="20" id="txtDetail" class="form-control form-control-sm s-2" 
 								  required="true" style="resize:none"></textarea>
 								</div>
 							</div>
 						</li>
 						<li class="list-group-item bg-light-grey">
-							<input type="submit" name="Button1" value="Submit" id="Button1" class="btn btn-info" />
+							<input type="submit" name="Button1" value="Submit" id="Button1" class="btn btn-info btn-sm" />
 						</li>
 					</ul>
                 </div>
