@@ -8,6 +8,7 @@
 .b{border:1px solid #ccc!important}
 .b-top{border-top:1px solid #ccc!important}
 .b-btm{border-bottom:1px solid #ccc!important}
+.b-btms{border-bottom:0.5px solid #a6a6a6!important}
 .b-left{border-left:1px solid #ccc!important}
 .b-right{border-right:1px solid #ccc!important}
 
@@ -73,6 +74,7 @@
 }
 
 /* WIDTHS */
+.max50{max-width:60px !important;}
 .max100{max-width:100px !important;}
 .max150{max-width:150px !important;}
 .max200{max-width:200px !important;}
@@ -179,7 +181,11 @@
 .bg-pale-green,.hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
 .bg-pale-yellow,.hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
 .bg-pale-blue,.hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
-.hover-opacity:hover{opacity: 0.5; filter: alpha(opacity=50);}
+.bg-lred,.hover-lred:hover{color:#fff!important;background-color:#660019!important}
+.bg-lredt,.hover-lredt:hover{color:#fff!important;background-color:rgba(102,0,25, 0.4)!important}
+.bg-ldarkred,.hover-ldarkred:hover{color:#fff!important;background-color:#4d0013!important}
+.bg-ldarkredt,.hover-ldarkredt:hover{color:#fff!important;background-color:rgba(77,0,19, 0.1)!important}
+.hover-opacity:hover{opacity: 0.5; filter: alpha(opacity=50)}
 
 .bg-pink-green{
 	background: white; /* For browsers that do not support gradients */
