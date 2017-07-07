@@ -1,101 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Plan-It</title>
-
-    <!-- CSS -->
-    <link href="css/k1.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=VT323|Roboto" rel="stylesheet">
-	<script src="css/FontAwesome.js"></script>
-	<style>
-		body {font-family: 'Roboto', sans-serif;}
-		@font-face 
-		{
-			font-family: f1; 
-			src: url('font1.ttf');
-		} 
-	</style>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Matthews & Partners</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link href="Resources/k1.css" rel="stylesheet" />
+	<script src="Resources/FontAwesome.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
-	<nav class="navbar navbar-toggleable-sm navbar-light bg-white fixed-top s-2">
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- NAVBAR -->
+	<nav class="navbar fixed-top mt-4 pt-4 navbar-toggleable-sm navbar-inverse p-3">
+		<button class="navbar-toggler navbar-toggler-right pointer" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#"><img src="img/PlanIT.png" style="width:70px; height:30px"></a>
+		<a class="navbar-brand" href="#"><img src="Resources/Logo.png" style="width:50px; height:30px"></a>
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav ml-auto small font-weight-bold">
-				<li class="nav-item">
-					<a class="nav-link text-indigo" href="#about">HOME</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-black thover-grey" href="AboutUs.html">ABOUT US</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-black thover-grey" href="Clients.html">PARTNERS & CLIENTS</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-black thover-grey" href="Products.html">PRODUCTS & SERVICES</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-black thover-grey" href="Social.html">SOCIAL RESPONSIBILITY</a>
-				</li>
-				<li class="nav-item">
-					<a href="ContactUs.html"><div class="btn btn-sm btn-primary bg-indigo hover-red mt-1 nb">Contact Us</div></a>
-				</li>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link text-red thover-red" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link text-white thover-red" href="About.html">About Us</a></li>
+				<li class="nav-item"><a class="nav-link text-white thover-red" href="Team.html">Our Team</a></li>
+				<li class="nav-item"><a class="nav-link text-white thover-red" href="Practice.html">Practice Areas</a></li>
+				<li class="nav-item"><a class="nav-link text-white thover-red" href="Contact.html">Contact Us</a></li>
 			</ul>
 		</div>
-    </nav>
-
-	<!-- HEADER -->
-    <header class="container-fluid parImage p-5 s-2" align="center">
-		<img src="img/PlanIT2.png" class="m-3 img-fluid" style="max-width: 100%; height: auto">
-		<h1 id="homeHeading" class="text-uppercase mb-2">Bespoke software development<br/> & Syspro ERP Support</h1>
-		<p>We provide a variety of products and services to enhance clients' overall business efficiency and value.</p>
-    </header>
-
-	<!-- WELCOME -->
-    <section id="about" class="bg-white-grey s-2">
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-left">
-                    <p><i class="fa fa-square-o" aria-hidden="true"></i>
-					Plan-IT is a vibrant Software Development 
-					house which focuses on delivering innovative IT solutions and consultancy services.</p>
-					<p>
-						<i class="fa fa-square-o" aria-hidden="true"></i>
-						Through the use of appropriate methodologies our business approach is tailored to accommodate individual 
-						customer requirements and company goals, allowing us to deliver quality software within shorter periods of 
-						time. In so doing, we assist clients in evolving their business and planning strategically, thereby deriving a return 
-						on their investment(s) whilst keeping their eyes on the road ahead. 
-					</p>
-					<p>
-						<i class="fa fa-square-o" aria-hidden="true"></i> 
-						We provide a variety of products and services to enhance clients' overall business efficiency.
-					</p>
-                </div>
-            </div>
-        </div>
-    </section>
+	</nav>
 	
-	<!-- QUOTE -->
-	<section class="bgimg-2">
-        <div class="container-fluid p-5">
-			<h2 class="text-white">"If you want to make more orange juice, don't squeeze the oranges harder; grow better oranges." Google</h2>
-        </div>
-    </section>
+	<!-- CONTACT -->
+	<div id="Contact" class="container-fluid p-2 px-3 small text-white fixed-top bg-ldarkredt">
+		<span class="mr-3 thover-red"><i class="fa fa-mobile" aria-hidden="true"></i> (053) 832 8222</span>
+		<span class="thover-red"><i class="fa fa-envelope-o" aria-hidden="true"></i> matthewslaw@telkomsa.net</span>
+	</div>
 	
+	<!-- SLIDESHOW -->
+	<div id="carouselExampleControls" class="carousel slide s-2" data-ride="carousel">
+		<ol class="carousel-indicators" >
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox" >
+			<!-- Slide 1 -->
+			<div class="carousel-item active" style="max-height:550px">
+				<img class="d-block img-fluid" src="Resources/01.jpg">
+				<div class="carousel-caption">
+					<h3>MATTHEWS & PARTNERS</h3>
+					<p>We commit ourselves to offering our clients a service that is excellent and fulfilling to their needs and thereby giving them peace of mind.</p>
+				</div>
+			</div>
+			<!-- Slide 2 -->
+			<div class="carousel-item" style="max-height:550px">
+				<img class="d-block img-fluid" src="Resources/02.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>MATTHEWS & PARTNERS</h3>
+					<p>We commit ourselves to offering our clients a service that is excellent and fulfilling to their needs and thereby giving them peace of mind.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- VALUES -->
+	<div class="container-fluid p-4" style="background-color:#e6e6e6 !important">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4>Our Values</h4>
+				Our values are sacred and uncompromisingly adhered to, as failure to do so will mean <br/>that we have failed our clients and ourselves.
+				<hr>
+				<ul>
+					<li>Integrity</li>
+					<li>Confidentiality</li>
+					<li>Quality</li>
+					<li>Continuous improvement</li>
+					<li>Clients first</li>
+					<li>Reliability</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- SERVICES -->
+	<div class="container-fluid p-4 s-2 bg-light-grey">
+		<div class="row">
+			<div class="col-sm-12"><h4>Our Services</h4><br/></div>
+			<div class="col-sm-12">
+				<div class="card-deck">
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Local Government Law
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Constitutional Law
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Administrative and Public <br/>Administration Law
+					</div>
+				</div>
+				<div class="card-deck">
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Minerals and Energy Law
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Compliance (Statutory and Corporate Governance)
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Drafting of Legislation
+					</div>
+				</div>
+				<div class="card-deck">
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Legal Training
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Legal Audits and Investigations
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Registration of legal entities
+					</div>
+				</div>
+				<div class="card-deck">
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 mb-2">
+						Advising on and drafting a <br/>wide range of agreements
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Property transfers
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Civil Litigation <br/>(High and Magistrates Court)
+					</div>
+				</div>
+				<div class="card-deck">
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Labour Law
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Administration of Trusts
+					</div>
+					<div class="card p-4 mb-3 bg-white hover-pale-red b" align="center">
+						<img src="Resources/icon.png" class="max50 my-2">
+						Administration of <br/>Insolvent Estates
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- FOOTER -->
-	<footer class="p-3 text-white" style="background-color:#4d4d4d; color:white">
-        <p class="small mb-0">&copy; Copyright Plan IT. All Rights Reserved. | Website designed and hosted by PlanIT | <a class="text-faded" href="BEE Certificate.pdf" target="_blank">BEE Certificate</a> | <a class="text-faded" href="Terms and Conditions.pdf" target="_blank">Terms & Conditions</a> | <a class="text-faded" href="Disclaimer.pdf" target="_blank">Disclaimer</a></p>
-    </footer>
+	<div class="container-fluid small p-3 b-top" style="background-color:#d9d9d9 !important">
+		<strong>Quick Links</strong> |
+		<a class="text-black thover-red" style="text-decoration:none" href="index.html">Home</a> |
+		<a class="text-black thover-red" style="text-decoration:none" href="About.html">About Us</a> |
+		<a class="text-black thover-red" style="text-decoration:none" href="Team.html">Our Team</a> |
+		<a class="text-black thover-red" style="text-decoration:none" href="Practice.html">Practise Areas</a> |
+		<a class="text-black thover-red" style="text-decoration:none" href="Contact.html">Contact Us</a><br/>
+		<a class="text-black thover-red" style="text-decoration:none" href="https://kobusvds.github.io" target="blank">Made by Plan-It</a>
+	</div>
+	
+	<!-- SCRIPT FOR NAVBAR -->
+	<script src="Resources/bootstrap.js"></script>
+	<script>
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
 
-	<!-- SCRIPTS -->
-    <script src="css/jquery.js"></script>
-    <script src="css/bootstrap.js"></script>
+			if (scroll >= 100) {
+				$("nav").removeClass("bg-transparent");
+				$("nav").addClass("bg-lred s-4");
+				$("#Contact").removeClass("bg-ldarkredt");
+				$("#Contact").addClass("bg-ldarkred");
+			} else {
+				$("nav").removeClass("bg-lred s-4");
+				$("nav").addClass("bg-transparent");
+				$("#Contact").removeClass("bg-ldarkred");
+				$("#Contact").addClass("bg-ldarkredt");
+			}
+		});
+	</script>
+	
 </body>
 </html>

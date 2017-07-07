@@ -13,52 +13,47 @@
 <body>
 
 	<!-- NAVBAR -->
-	<div class="container-fluid bg-dark-grey p-2 px-3 small s-2" style="background-color:#4d0013!important">
-		<span class="mr-3 thover-red"><i class="fa fa-mobile" aria-hidden="true"></i> (053) 832 8222</span>
-		<span class="thover-red"><i class="fa fa-envelope-o" aria-hidden="true"></i> matthewslaw@telkomsa.net</span>
-	</div>
-	<nav class="navbar navbar-toggleable-sm b-btm navbar-inverse p-3 s-4" style="background-color:#660019!important">
+	<nav class="navbar fixed-top mt-4 pt-4 navbar-toggleable-sm navbar-inverse p-3">
 		<button class="navbar-toggler navbar-toggler-right pointer" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<a class="navbar-brand" href="#"><img src="Resources/Logo.png" style="width:50px; height:30px"></a>
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link text-white thover-red" href="Default.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link text-white thover-red" href="About.html" >About Us</a></li>
+				<li class="nav-item"><a class="nav-link text-white thover-red" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link text-white thover-red" href="About.html">About Us</a></li>
 				<li class="nav-item"><a class="nav-link text-white thover-red" href="Team.html">Our Team</a></li>
 				<li class="nav-item"><a class="nav-link text-white thover-red" href="Practice.html">Practice Areas</a></li>
 				<li class="nav-item"><a class="nav-link text-red thover-red" href="Contact.html">Contact Us</a></li>
 			</ul>
 		</div>
 	</nav>
-	<div id="carouselExampleControls" class="carousel slide b-btm s-4" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
+	
+	<!-- CONTACT -->
+	<div id="Contact" class="container-fluid p-2 px-3 small text-white fixed-top bg-ldarkredt">
+		<span class="mr-3 thover-red"><i class="fa fa-mobile" aria-hidden="true"></i> (053) 832 8222</span>
+		<span class="thover-red"><i class="fa fa-envelope-o" aria-hidden="true"></i> matthewslaw@telkomsa.net</span>
+	</div>
+	
+	<!-- SLIDESHOW -->
+	<div id="carouselExampleControls" class="carousel slide s-2" data-ride="carousel" style="max-height:300px; overflow:hidden">
+		<ol class="carousel-indicators" >
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox" >
 			<!-- Slide 1 -->
 			<div class="carousel-item active">
-				<img class="d-block img-fluid" src="Resources/107.jpg" style="width:100%">
+				<img class="d-block img-fluid" src="Resources/01.jpg" style="background-size:cover">
 			</div>
 			<!-- Slide 2 -->
 			<div class="carousel-item">
-				<img class="d-block img-fluid" src="Resources/107.jpg" style="width:100%">
-			</div>
-			<!-- Slide 3 -->
-			<div class="carousel-item">
-				<img class="d-block img-fluid" src="Resources/107.jpg" style="width:100%">
+				<img class="d-block img-fluid" src="Resources/02.jpg" style="background-size:cover">
 			</div>
 		</div>
-		<!-- Previous Control -->
-		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<!-- Next Control -->
-		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
 	</div>
 
+	<!-- KIMBERLEY -->
 	<div class="container-fluid p-4 s-2" style="background-color:#e6e6e6 !important">
 		<div class="row">
 			<div class="col-md-4">
@@ -90,6 +85,8 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- UPINGTON -->
 	<div class="container-fluid p-4">
 		<div class="row">
 			<div class="col-md-4">
@@ -121,7 +118,7 @@
 	<!-- FOOTER -->
 	<div class="container-fluid small p-3 b-top" style="background-color:#d9d9d9 !important">
 		<strong>Quick Links</strong> |
-		<a class="text-black thover-red" style="text-decoration:none" href="Default.html">Home</a> |
+		<a class="text-black thover-red" style="text-decoration:none" href="index.html">Home</a> |
 		<a class="text-black thover-red" style="text-decoration:none" href="About.html">About Us</a> |
 		<a class="text-black thover-red" style="text-decoration:none" href="Team.html">Our Team</a> |
 		<a class="text-black thover-red" style="text-decoration:none" href="Practice.html">Practise Areas</a> |
@@ -129,6 +126,25 @@
 		<a class="text-black thover-red" style="text-decoration:none" href="https://kobusvds.github.io" target="blank">Made by Plan-It</a>
 	</div>
 
+	<!-- SCRIPT FOR NAVBAR -->
 	<script src="Resources/bootstrap.js"></script>
+	<script>
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+
+			if (scroll >= 100) {
+				$("nav").removeClass("bg-transparent");
+				$("nav").addClass("bg-lred s-4");
+				$("#Contact").removeClass("bg-ldarkredt");
+				$("#Contact").addClass("bg-ldarkred");
+			} else {
+				$("nav").removeClass("bg-lred s-4");
+				$("nav").addClass("bg-transparent");
+				$("#Contact").removeClass("bg-ldarkred");
+				$("#Contact").addClass("bg-ldarkredt");
+			}
+		});
+	</script>
+	
 </body>
 </html>
