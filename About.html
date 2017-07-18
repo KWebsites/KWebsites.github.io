@@ -1,109 +1,78 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Matthews & Partners</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    
-    <link href="Resources/k1.css" rel="stylesheet" />
-	<script src="Resources/FontAwesome.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KobusvdS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- STYLES -->
+	<link href="Resources/k1.css" rel="stylesheet" />
+	<script src="https://use.fontawesome.com/2ca2fed7b5.js"></script>
 </head>
-<body>
+<body class="bg-light-grey">
 
-	<!-- NAVBAR -->
-	<nav class="navbar fixed-top mt-4 pt-4 navbar-toggleable-sm navbar-inverse p-3">
+<!-- NAVIGATION -->
+	<nav class="navbar fixed-top navbar-toggleable-sm navbar-light p-2 bg-white s-2">
 		<button class="navbar-toggler navbar-toggler-right pointer" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#"><img src="Resources/Logo.png" style="width:50px; height:30px"></a>
+		<a class="navbar-brand" href="#"><i class="fa fa-diamond" aria-hidden="true"></i> S.P.S</a>
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link text-white thover-red" href="index.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link text-red thover-red" href="About.html">About Us</a></li>
-				<li class="nav-item"><a class="nav-link text-white thover-red" href="Team.html">Our Team</a></li>
-				<li class="nav-item"><a class="nav-link text-white thover-red" href="Practice.html">Practice Areas</a></li>
-				<li class="nav-item"><a class="nav-link text-white thover-red" href="Contact.html">Contact Us</a></li>
+				<li class="nav-item"><a class="nav-link thover-red" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link thover-red" href="PropL.html">Property Letting</a></li>
+				<li class="nav-item"><a class="nav-link thover-red" href="PropM.html">Property Maintenence</a></li>
+				<li class="nav-item"><a class="nav-link thover-red" href="Laundry.html">Laundry Service</a></li>
+				<li class="nav-item"><a class="nav-link thover-red" href="Cars.html">Car Hire</a></li>
+				<li class="nav-item"><a class="nav-link text-red thover-red" href="About.html">About</a></li>
 			</ul>
 		</div>
 	</nav>
+
+	<!-- HEADER -->
+    <header class="container-fluid parImage mt-5 p-5 s-2 a-c">
+		<br/><br/><br/><h1>WHY US</h1>
+		<h3>Experienced. Knowledgeable. Professional.</h3>
+		<br/><br/><br/>
+    </header>
 	
-	<!-- CONTACT -->
-	<div id="Contact" class="container-fluid p-2 px-3 small text-white fixed-top bg-ldarkredt">
-		<span class="mr-3 thover-red"><i class="fa fa-mobile" aria-hidden="true"></i> (053) 832 8222</span>
-		<span class="thover-red"><i class="fa fa-envelope-o" aria-hidden="true"></i> matthewslaw@telkomsa.net</span>
-	</div>
+	<!-- INFO -->
+	<section class="bg-light-grey s-2 a-c">
+        <div class="container p-5">
+			<p>Sission property services were created to offer its clients quality across the board. We aim to be a one-stop-shop for all 
+			related property needs in the short, medium and long term rental industry.</p>
+ 
+			<p>Currently, we are located in the Century City District and manage over 70 fully furnished, self-catering apartments in 
+			modern urban designed and secured residential developments. Additionally, we offer car rentals that include point-to-point 
+			and airport transfers to meet every client's specific needs. With a strong focus placed on value, we strive to keep all 
+			our properties in tip top shape, with our in-house managed maintenance department, laundry service and housekeeping that 
+			not only meet the needs of our portfolio but also that of so many other property owners.</p>
+			
+			<hr/>
+ 
+			<p>Not sure if we can help you? Feel free to contact us and let's see how we can meet your specific needs.</p>
+        </div>
+    </section>
+
+	<!-- WELCOME -->
+    <section class="bg-white-grey s-2 a-c">
+        <div class="container p-5">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i> siissionps@gmail.com<br/>
+			<i class="fa fa-phone" aria-hidden="true"></i> 083 874 3543<br/>
+			<i class="fa fa-map-marker" aria-hidden="true"></i> Century City, Cape Town, 7441, South Africa <hr>
+			<h3><a href=""><i class="fa fa-facebook-official text-black thover-red m-3" aria-hidden="true"></i></a>
+			<a href=""><i class="fa fa-twitter text-black thover-red m-3" aria-hidden="true"></i></a> 
+			<a href=""><i class="fa fa-instagram text-black thover-red m-3" aria-hidden="true"></i></a></h3>
+        </div>
+    </section>
 	
-	<!-- SLIDESHOW -->
-	<div id="carouselExampleControls" class="carousel slide s-2" data-ride="carousel" style="max-height:400px; overflow:hidden">
-		<ol class="carousel-indicators" >
-			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox" >
-			<!-- Slide 1 -->
-			<div class="carousel-item active">
-				<img class="d-block img-fluid" src="Resources/01.jpg" style="background-size:cover">
-			</div>
-			<!-- Slide 2 -->
-			<div class="carousel-item">
-				<img class="d-block img-fluid" src="Resources/02.jpg" style="background-size:cover">
-			</div>
-		</div>
-	</div>
-
-	<!-- OUR BACKGROUND -->
-	<div class="container-fluid p-4" class="container-fluid p-4" style="background-color:rgba(242,242,242, 0.4)">
-		<div class="row">
-			<div class="col-sm-12">
-				<strong>Our Background</strong><hr>
-				<p>Matthews and Partners is a firm of attorneys established on 1 August 2003 in Kimberley, Northern Cape Province. The firm is wholly 
-				owned by Roger Eric Matthews, an attorney from a historically disadvantaged background.
-				Roger who was admitted as an attorney in 1997, identified the need for the provision of quality legal services especially to 
-				municipalities in the Northern Cape, whilst he was employed as Head of Legal Services in the Northern Cape Department of Housing 
-				and Local Government.</p>
-
-				<p>The Firm was therefore born out of a desire to provide services in a sphere of government that has for many years due to 
-				historical reasons been inaccessible to previously disadvantaged legal practitioners. Our aim is however to provide quality 
-				legal services not only in the local government sector but also provincial government, national government as well as in the 
-				business and private sector.</p><hr>
-
-				<p>We commit ourselves to offering our clients a service that is excellent and fulfilling to their needs and thereby giving 
-				them peace of mind.</p>
-			</div>
-		</div>
-	</div>
-
 	<!-- FOOTER -->
-	<div class="container-fluid small p-4 b-top" style="background-color:#d9d9d9 !important">
-		<strong>Quick Links</strong> |
-		<a class="text-black thover-red" style="text-decoration:none" href="index.html">Home</a> |
-		<a class="text-black thover-red" style="text-decoration:none" href="About.html">About Us</a> |
-		<a class="text-black thover-red" style="text-decoration:none" href="Team.html">Our Team</a> |
-		<a class="text-black thover-red" style="text-decoration:none" href="Practice.html">Practise Areas</a> |
-		<a class="text-black thover-red" style="text-decoration:none" href="Contact.html">Contact Us</a><br/>
-		<a class="text-black thover-red" style="text-decoration:none" href="https://kobusvds.github.io" target="blank">Made by Plan-It</a>
-	</div>
+	<footer class="p-3 text-white" style="background-color:#4d4d4d; color:white">
+        <p class="small mb-0">Made By <a class="text-faded thover-red" href="http://KobusvdS.github.io" target="_blank">KobusvdS</a></p>
+    </footer>
 
-	<!-- SCRIPT FOR NAVBAR -->
-	<script src="Resources/bootstrap.js"></script>
-	<script>
-		$(window).scroll(function() {    
-			var scroll = $(window).scrollTop();
-
-			if (scroll >= 100) {
-				$("nav").removeClass("bg-transparent");
-				$("nav").addClass("bg-lred s-4");
-				$("#Contact").removeClass("bg-ldarkredt");
-				$("#Contact").addClass("bg-ldarkred");
-			} else {
-				$("nav").removeClass("bg-lred s-4");
-				$("nav").addClass("bg-transparent");
-				$("#Contact").removeClass("bg-ldarkred");
-				$("#Contact").addClass("bg-ldarkredt");
-			}
-		});
-	</script>
-	
+	<!-- SCRIPTS -->
+    <script src="Resources/jquery.js"></script>
+    <script src="Resources/bootstrap.js"></script>
 </body>
 </html>
