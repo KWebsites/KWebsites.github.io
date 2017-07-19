@@ -6737,6 +6737,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {background-color: #101112 !important;}
 }
 
 .p-1 {padding: 0.25rem 0.25rem !important;}
+.p-05 {padding: 0.15rem 0.15rem !important;}
 .pt-1 {padding-top: 0.25rem !important;}
 .pr-1 {padding-right: 0.25rem !important;}
 .pb-1 {padding-bottom: 0.25rem !important;}
